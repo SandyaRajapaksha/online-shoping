@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 1em;
+}
+
+.hero, .about-us, .contact-form, .gallery {
+    text-align: center;
+}
+
+.product-grid, .product-list, .gallery-grid {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    flex-wrap: wrap;
+}
+
+.product, .gallery-item {
+    border: 1px solid #ddd;
+    padding: 1em;
+    text-align: center;
+    max-width: 300px;
+}
+
+.product img, .gallery-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-list .product, .gallery-grid .gallery-item {
+    flex: 1 1 calc(33% - 2em);
+    box-sizing: border-box;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
